@@ -1,3 +1,7 @@
+## 3.1.0 (Unreleased)
+
+* Add `sensitive` resource and data source which masks the inputs and outputs. These are functionally identical to their non-sensitive counterparts.
+
 ## 3.0.0 (October 08, 2020)
 
 Binary releases of this provider will now include the linux-arm64 platform.

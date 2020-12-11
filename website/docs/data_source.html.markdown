@@ -11,6 +11,12 @@ description: |-
 The `null_data_source` data source implements the standard data source
 lifecycle but does not interact with any external APIs.
 
+There is also a `null_data_source_sensitive` data source that is functionally
+identical to `null_data_source`, but marks the `inputs` argument and `outputs`
+attribute as "sensitive" (hiding its value in the UI). See [this
+document](https://www.terraform.io/docs/extend/best-practices/sensitive-state.html)
+for more information on sensitive values.
+
 ## Example Usage
 
 The primary use-case for the null data source is to gather together

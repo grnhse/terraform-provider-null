@@ -14,6 +14,12 @@ takes no further action.
 The `triggers` argument allows specifying an arbitrary set of values that,
 when changed, will cause the resource to be replaced.
 
+There is also a `null_resource_sensitive` resource that is functionally
+identical to `null_resource`, but marks the `triggers` attribute as "sensitive"
+(hiding its value in the UI). See [this
+document](https://www.terraform.io/docs/extend/best-practices/sensitive-state.html)
+for more information on sensitive values.
+
 ## Example Usage
 
 The primary use-case for the null resource is as a do-nothing container for
